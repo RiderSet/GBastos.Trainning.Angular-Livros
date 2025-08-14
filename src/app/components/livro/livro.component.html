@@ -1,0 +1,14 @@
+<section ngclass="livro().genero.id">
+    <button type="button" class="favorito-btn" (click)="alternarFavorito()">
+    <span>{{ livro().favorito ? '\u2764' : '\u2661' }}</span>
+  </button>
+
+    <div class="imagem ">
+        <img src="{{ livro()?.imagem }} " alt="{{ livro()?.titulo }} ">
+    </div>
+
+    <div class="info-book ">
+        <h2 class="text-h2 ">{{ livro()?.titulo }}</h2>
+        <h3 class="text-h3 ">{{ livro()?.autor }}</h3>
+    </div>
+</section>
